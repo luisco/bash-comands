@@ -14,3 +14,6 @@ grep "open  telnet" -B 5 resultado_ips.txt | grep Nmap  | awk '{print $6}' | sed
 
 sudo tcpdump -ttttnnr tcp_dump.pcap
 
+##Captura de pcap desde consola windows, ejemplo captura DNS
+
+.\WinDump.exe -i 2 -q -w C:\DNS_TCP2\DNS_TCP -n -C 30 -W 10 -U -s 0 tcp and port 53 
