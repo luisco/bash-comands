@@ -20,3 +20,7 @@ sudo tcpdump -ttttnnr tcp_dump.pcap
 ##Captura de pcap desde consola windows, ejemplo captura DNS
 
 .\WinDump.exe -i 2 -q -w C:\DNS_TCP2\DNS_TCP -n -C 30 -W 10 -U -s 0 tcp and port 53 
+
+##Ordenar archivos y directorios por orden de peso incluyendo archivos ocultos
+
+sudo du -hs $(ls -A) | sort -h
