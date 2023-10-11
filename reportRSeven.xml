@@ -1,0 +1,128 @@
+<NeXposeSimpleXML version="1.0">
+<generated>20231006T103443229</generated>
+<devices>
+<device address="192.168.1.109" id="2243">
+<fingerprint certainty="0.80">
+<description>Microsoft Windows Server 2012 R2</description>
+<vendor>Microsoft</vendor>
+<family>Windows</family>
+<product>Windows Server 2012 R2</product>
+<version/>
+<device-class/>
+<architecture/>
+</fingerprint>
+<vulnerabilities>
+<vulnerability id="generic-icmp-timestamp" resultCode="VE">
+<id type="cve">CVE-1999-0524</id>
+<id type="osvdb">95</id>
+<key/>
+</vulnerability>
+<vulnerability id="generic-tcp-timestamp" resultCode="VE">
+<id type="url">http://uptime.netcraft.com</id>
+<id type="url">http://www.forensicswiki.org/wiki/TCP_timestamps</id>
+<id type="url">http://www.ietf.org/rfc/rfc1323.txt</id>
+<key/>
+</vulnerability>
+</vulnerabilities>
+<services>
+<service name="RDP" port="3389" protocol="tcp">
+<vulnerabilities>
+<vulnerability id="tls-untrusted-ca" resultCode="VE">
+<id type="url">http://httpd.apache.org/docs/2.2/mod/mod_ssl.html</id>
+<id type="url">http://nginx.org/en/docs/http/configuring_https_servers.html</id>
+<id type="url">https://support.microsoft.com/en-us/kb/954755</id>
+<key/>
+</vulnerability>
+<vulnerability id="ssl-cve-2016-2183-sweet32" resultCode="VE">
+<id type="cve">CVE-2016-2183</id>
+<id type="url">https://sweet32.info/</id>
+<id type="url">https://www.openssl.org/blog/blog/2016/08/24/sweet32</id>
+<id type="url">https://access.redhat.com/articles/2548661</id>
+<key/>
+</vulnerability>
+<vulnerability id="tls-server-cve-2015-2808" resultCode="VE">
+<id type="cve">CVE-2015-2808</id>
+<id type="url">https://blog.pcisecuritystandards.org/migrating-from-ssl-and-early-tls</id>
+<id type="url">http://www.imperva.com/docs/HII_Attacking_SSL_when_using_RC4.pdf</id>
+<key/>
+</vulnerability>
+<vulnerability id="rc4-cve-2013-2566" resultCode="VE">
+<id type="cve">CVE-2013-2566</id>
+<id type="url">http://www.isg.rhul.ac.uk/tls/</id>
+<id type="url">https://tools.ietf.org/html/rfc7465</id>
+<id type="url">http://www.nist.gov/manuscript-publication-search.cfm?pub_id=915295</id>
+<id type="url">https://wiki.mozilla.org/Security/Server_Side_TLS</id>
+<id type="url">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet#Rule_-_Only_Support_Strong_Cryptographic_Ciphers</id>
+<id type="url">http://support.microsoft.com/kb/245030/</id>
+<key/>
+</vulnerability>
+<vulnerability id="ssl-cve-2011-3389-beast" resultCode="VE">
+<id type="cve">CVE-2011-3389</id>
+<id type="url">http://vnhacker.blogspot.co.uk/2011/09/beast.html</id>
+<key/>
+</vulnerability>
+<vulnerability id="ssl-self-signed-certificate" resultCode="VE">
+<key/>
+</vulnerability>
+<vulnerability id="ssl-weak-message-authentication-code-algorithms" resultCode="VE">
+<id type="url">https://wiki.mozilla.org/Security/Server_Side_TLS</id>
+<id type="url">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet#Rule_-_Only_Support_Strong_Cryptographic_Ciphers</id>
+<id type="url">https://blog.pcisecuritystandards.org/how-the-sha-1-collision-impacts-security-of-payments</id>
+<key/>
+</vulnerability>
+<vulnerability id="tlsv1_0-enabled" resultCode="VE">
+<id type="url">https://www.pcisecuritystandards.org/documents/Migrating_from_SSL_Early_TLS_Information%20Supplement_v1.pdf</id>
+<id type="url">http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf</id>
+<key/>
+</vulnerability>
+<vulnerability id="ssl-static-key-ciphers" resultCode="VE">
+<id type="url">http://www.nist.gov/manuscript-publication-search.cfm?pub_id=915295</id>
+<id type="url">https://wiki.mozilla.org/Security/Server_Side_TLS</id>
+<id type="url">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet#Rule_-_Only_Support_Strong_Cryptographic_Ciphers</id>
+<id type="url">http://support.microsoft.com/kb/245030/</id>
+<id type="url">https://tools.ietf.org/html/rfc7540/</id>
+<key/>
+</vulnerability>
+<vulnerability id="tls-dh-prime-under-2048-bits" resultCode="VE">
+<id type="url">https://weakdh.org/</id>
+<key/>
+</vulnerability>
+<vulnerability id="tls-dh-primes" resultCode="VE">
+<id type="url">https://weakdh.org/</id>
+<id type="url">https://www.openssl.org/docs/man1.1.0/apps/dhparam.html</id>
+<key/>
+</vulnerability>
+<vulnerability id="tlsv1_1-enabled" resultCode="VE">
+<id type="url">https://www.pcisecuritystandards.org/documents/Migrating_from_SSL_Early_TLS_Information%20Supplement_v1.pdf</id>
+<id type="url">http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf</id>
+<key/>
+</vulnerability>
+<vulnerability id="ssl-3des-ciphers" resultCode="VE">
+<id type="url">http://www.nist.gov/manuscript-publication-search.cfm?pub_id=915295</id>
+<id type="url">http://www.ecrypt.eu.org/ecrypt2/documents/D.SPA.20.pdf</id>
+<id type="url">http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-52r1.pdf</id>
+<id type="url">https://wiki.mozilla.org/Security/Server_Side_TLS</id>
+<id type="url">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet#Rule_-_Only_Support_Strong_Cryptographic_Ciphers</id>
+<id type="url">http://support.microsoft.com/kb/245030/</id>
+<key/>
+</vulnerability>
+<vulnerability id="ssl-only-weak-ciphers" resultCode="VE">
+<id type="url">http://www.nist.gov/manuscript-publication-search.cfm?pub_id=915295</id>
+<id type="url">https://wiki.mozilla.org/Security/Server_Side_TLS</id>
+<id type="url">https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet#Rule_-_Only_Support_Strong_Cryptographic_Ciphers</id>
+<id type="url">http://support.microsoft.com/kb/245030/</id>
+<key/>
+</vulnerability>
+</vulnerabilities>
+</service>
+<service name="CIFS Name Service" port="137" protocol="udp">
+<vulnerabilities>
+<vulnerability id="netbios-nbstat-amplification" resultCode="VV">
+<key/>
+</vulnerability>
+</vulnerabilities>
+</service>
+</services>
+</device>
+</devices>
+</NeXposeSimpleXML>
